@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosso Cantinho </title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+</head>
+<body>
+    <audio id="musica-fundo" src="musica/Aliana - Tribalistas clipe oficial.mp3" loop></audio>
+
+    <header>
+        <h1>Galeria da boiolagem ✨</h1>
+        <nav>
+            <button id="btn-musica">▶️</button> <button id="btn-abrir-modal">+ Adicionar Nova Memória</button>
+        </nav>
+        
+    </header>
+
+    <main>
+        <h2>Todos os nosos momentos fofineos</h2>
+
+        <section id="galeria">
+
+            <article class="cartao-foto">
+                <img src="https://via.placeholder.com/400x300" alt="Descrição da foto">
+                <div class="info-foto">
+                    <h3>Aquele dia no parque</h3>
+                    <p><strong>Data:</strong> 25 de Junho, 2025</p>
+                    <p>Uma pequena legenda sobre como esse dia foi especial...</p>
+                    <small>Enviado por: Ela</small>
+                </div>
+            </article>
+
+            <article class="cartao-foto">
+                <img src="https://via.placeholder.com/400x300" alt="Descrição da foto">
+                <div class="info-foto">
+                    <h3>Jantar de Aniversário</h3>
+                    <p><strong>Data:</strong> 10 de Maio, 2025</p>
+                    <p>Comemorando e rindo muito, como sempre.</p>
+                    <small>Enviado por: Ele</small>
+                </div>
+            </article>
+
+        </section>
+        <div id="modal-upload" class="modal">
+            <div class="modal-conteudo">
+                <button id="btn-fechar-modal" class="fechar-modal">&times;</button>
+                <h2>Adicionar Nova Memória</h2>
+                <form>
+                    <label for="input-foto">Escolha a foto:</label>
+                    <input type="file" id="input-foto" name="foto">
+        
+                    <label for="input-titulo">Título:</label>
+                    <input type="text" id="input-titulo" name="titulo" placeholder="Ex: Nosso primeiro sorvete">
+        
+                    <label for="input-descricao">Descrição:</label>
+                    <textarea id="input-descricao" name="descricao" rows="4"></textarea>
+        
+                    <button type="submit" class="btn-enviar">Salvar Memória</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
