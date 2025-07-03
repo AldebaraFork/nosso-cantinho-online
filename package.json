@@ -4,7 +4,7 @@
   "main": "script.js",
   "scripts": {
     "start": "node servidor.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +13,7 @@
   "dependencies": {
     "express": "^5.1.0",
     "multer": "^2.0.1",
+    "pg": "^8.16.3",
     "sqlite3": "^5.1.7"
   }
-  
 }
-
